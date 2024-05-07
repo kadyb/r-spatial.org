@@ -17,6 +17,9 @@ editor: visual
 
 :::
 
+
+**Refer to <https://spatial-data-science.github.io/2024/> for the 2024 conference.**
+
 ## Goals
 
 Spatial data science is concerned with finding answers to spatial
