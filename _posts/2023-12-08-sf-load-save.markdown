@@ -130,7 +130,7 @@ geometry. It can be obtained by using the `st_geometry()` function.
 
     plot(st_geometry(countries))
 
-![](images/sf-load-save-1-1.png)
+![](/images/sf-load-save-1-1.png)
 
 GeoPackage (.gpkg)
 ------------------
@@ -193,7 +193,7 @@ color of the object.
     plot(st_geometry(countries))
     plot(st_geometry(rivers), add = TRUE, col = "blue")
 
-![](images/sf-load-save-2-1.png)
+![](/images/sf-load-save-2-1.png)
 
 GeoJSON (.geojson)
 ------------------
@@ -334,7 +334,7 @@ symbol (`pch` argument), set its size (`cex` argument) and fill color
     plot(st_geometry(rivers), add = TRUE, col = "blue")
     plot(st_geometry(capitals), add = TRUE, pch = 24, bg = "red", cex = 0.8)
 
-![](images/sf-load-save-3-1.png)
+![](/images/sf-load-save-3-1.png)
 
 Vector saving
 =============
@@ -536,4 +536,4 @@ loading rivers only in southern Africa:
     rivers_south = read_sf(f, wkt_filter = bbox)
     plot(st_geometry(rivers_south), axes = TRUE)
 
-![](images/sf-load-save-4-1.png)
+![](/images/sf-load-save-4-1.png)
