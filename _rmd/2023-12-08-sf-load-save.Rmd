@@ -8,7 +8,7 @@ categories: r
 ---
 
 ```{r include=FALSE}
-knitr::opts_chunk$set(fig.path = "images/")
+knitr::opts_chunk$set(fig.path = "/images/")
 ```
 
 TOC
@@ -112,7 +112,7 @@ After loading the data, it is a good idea to present it on a map. A simple
 fields (attributes), but to start with we only need geometry. It can be obtained
 by using the `st_geometry()` function.
 
-```{r fig.path = "images/", label="sf-load-save-1"}
+```{r label="sf-load-save-1"}
 plot(st_geometry(countries))
 ```
 
@@ -143,7 +143,7 @@ done with the `add = TRUE` argument in `plot()` function. Note that the order
 in which objects are added is important -- the objects added last are displayed
 at the top. The `col` argument is used to set the color of the object.
 
-```{r fig.path = "images/", label="sf-load-save-2"}
+```{r label="sf-load-save-2"}
 plot(st_geometry(countries))
 plot(st_geometry(rivers), add = TRUE, col = "blue")
 ```
@@ -210,7 +210,7 @@ In the last step, we prepare the final visualization. We can add a title
 (`bgc` argument) of the figure. We can also change the point symbol (`pch`
 argument), set its size (`cex` argument) and fill color (`bg` argument).
 
-```{r fig.path = "images/", label="sf-load-save-3"}
+```{r label="sf-load-save-3"}
 plot(st_geometry(countries), main = "Africa", axes = TRUE, bgc = "deepskyblue",
      col = "burlywood")
 plot(st_geometry(rivers), add = TRUE, col = "blue")
@@ -333,7 +333,7 @@ bbox = st_as_text(st_as_sfc(bbox))
 bbox
 ```
 
-```{r fig.path = "images/", label="sf-load-save-4"}
+```{r label="sf-load-save-4"}
 f = "data/rivers.gpkg"
 rivers_south = read_sf(f, wkt_filter = bbox)
 plot(st_geometry(rivers_south), axes = TRUE)
