@@ -1,6 +1,6 @@
 # NAME	= 2022-12-12-evolution2
 #NAME	= 2023-05-15-evolution4
-NAME	= 2023-09-21-stars-parallel
+NAME	= 2023-12-08-sf-load-save
 #NAME	= 2021-04-21-xx
 #NAME	= 2022-03-05-sftime-1
 #NAME	= 2022-03-16-openeo
@@ -17,7 +17,8 @@ all:
 		sed 's/TOC/\* TOC \n\{\:toc\}/g' > \
 		../_posts/$(NAME).markdown
 	# rm -fr xx.md xx.Rmd
-	cp -rpf xx_files/* ../images
+	#cp -rpf xx_files/* ../images
+	cp -rpf images/* ../images
 	#rm -fr xx_images
 
 sftime:
