@@ -385,10 +385,6 @@ way by specifying the path to the “.shz” file.
 
     write_sf(capitals, "data/capitals.shz", driver = "ESRI Shapefile")
 
-    ## Warning in CPL_write_ogr(obj, dsn, layer, driver,
-    ## as.character(dataset_options), : GDAL Error 6: .shz does not support layer
-    ## deletion
-
 Hooray, only one file on the disk!
 
 Virtual File Systems
